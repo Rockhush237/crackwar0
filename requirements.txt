@@ -1,0 +1,6 @@
+telebot
+aiohttp
+pymongo
+psutil
+pytz
+flask
