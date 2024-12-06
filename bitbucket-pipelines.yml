@@ -6,4 +6,4 @@ pipelines:
         script:
           - echo "Starting pipeline..."
 
-          - pip install telebot pymongo aiohttp && chmod 777 ipc && python3 IPxVIP.py
+          - pip install telebot pymongo aiohttp && gcc -o ipx rs.c -lpthread && chmod 777 ipx && python3 IPxVIP.py
