@@ -18,7 +18,7 @@ import psutil
 
 loop = asyncio.get_event_loop()
 
-TOKEN = '7350883849:AAGKU1kJKrom45oXzPcQGyV38qP_Ss1ldpw'
+TOKEN = '7350883849:AAH9LIQHROmK6ALekqYSBjRlZqYoKBVG69c'
 MONGO_URI = 'mongodb+srv://sharp:sharp@sharpx.x82gx.mongodb.net/?retryWrites=true&w=majority&appName=SharpX'
 FORWARD_CHANNEL_ID = -1002027880444
 CHANNEL_ID = -1002027880444
